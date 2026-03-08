@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shweta | B.Tech CSE Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --light-bg: #f8f9fa;
+            --text-dark: #212529;
+            --text-muted: #6c757d;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            background-color: var(--light-bg); 
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        nav { 
+            background: white; 
+            padding: 20px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+        nav a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
+            margin: 0 25px; 
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav a:hover { color: var(--primary-blue); }
+
+        header { 
+            background: linear-gradient(135deg, #0056b3 0%, #00a8ff 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 3em; margin: 0; font-weight: 700; }
+        header p { font-size: 1.2em; opacity: 0.9; }
+
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+
+        section { margin-bottom: 60px; }
+        h2 { 
+            font-size: 2em; 
+            color: var(--primary-blue); 
+            border-bottom: 3px solid var(--primary-blue); 
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .project-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px; 
+        }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eee;
+        }
+        .card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card h3 { color: var(--primary-blue); margin-top: 0; }
+        .card p { color: var(--text-muted); font-size: 0.95em; }
+
+        .btn { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            background: var(--primary-blue); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #004494; }
+
+        .wa-btn { 
+            background: #25d366; 
+            color: white; 
+            padding: 15px 40px; 
+            font-size: 1.1em; 
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 50px; 
+            background: #f1f3f5; 
+            color: var(--text-muted); 
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1>Shweta</h1>
+    <p>Computer Science & Engineering Student | Shobhit University</p>
+    <p>Python Developer | Cybersecurity Enthusiast | Tech Innovator</p>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>Professional Profile</h2>
+        <p>I am a second-year B.Tech student specializing in Computer Science. I am dedicated to building functional Python applications and exploring the depths of Cybersecurity. My goal is to create technology that simplifies data management and enhances digital security.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Key Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Smart Expense Tracker</h3>
+                <p>A Python desktop application using Tkinter and Pandas for secure local expense management and data analysis.</p>
+                <a href= https://github.com/CodeWithShweta1705/Smart-Expense-Tracker class="btn">View Source Code</a>
+            </div>
+
+            <div class="card">
+                <h3>Trading Bot Simulator</h3>
+                <p>A technical analysis tool using RSI and MACD indicators to simulate stock market trading strategies.</p>
+                <a href=https://github.com/CodeWithShweta1705/Trading-Bot-Simulator class="btn">View Source Code</a>
+            </div>
+
+            <div class="card">
+                <h3>Password Generator</h3>
+                <p>A security tool designed to generate complex, high-entropy passwords for improved personal cybersecurity.</p>
+                <a href=https://github.com/CodeWithShweta1705/Password-Generator-Python class="btn">View Source Code</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center; padding: 40px 0;">
+        <h2>Let's Connect</h2>
+        <p style="margin-bottom: 30px; color: var(--text-muted);">Interested in my work? Feel free to reach out directly via WhatsApp!</p>
+        
+        <a href="https://wa.me/916396802400?text=Hi%20Shweta,%20I%20saw%20your%20portfolio%20and%20I%20am%20interested%20in%20your%20projects." class="wa-btn">
+            Chat with me on WhatsApp
+        </a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Shweta. Compiled and Deployed via GitHub.</p>
+</footer>
+
+</body>
+</html>
